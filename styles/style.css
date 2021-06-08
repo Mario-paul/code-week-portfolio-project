@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+html {
+  min-width: fit-content;
+}
 
 body {
   margin: 0;
-  font-family: Helvetica, sans-serif;
   background-color: #202020;
   color: white;
 }
@@ -16,8 +20,10 @@ a {
   padding: 34px;
   display: flex;
 }
+
 .header {
   top: 0;
+  font-family: Helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.623);
   position: fixed;
@@ -153,18 +159,61 @@ a {
   }
 }
 
+/* BIO SECTION */
+
 #bio-section {
   display: flex;
   justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 80%;
   align-items: center;
   flex-direction: column;
-  color: thistle;
-  height: 10cm;
-  background-color: teal;
+  color: white;
+  height: 30%;
+  background-color: #202020;
+  padding: 15% 6%;
 }
-#bio-section>img{
-  width: 10%;
+
+#bio-section > img{
+  width: 40%;
+  padding: 10%;
+  border-radius: 50%;
 }
+
+#bio-section > p {
+  text-align: center;
+}
+
+#bio-section > aside {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#bio-section > h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 55% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* WORK SECTION */
 
 #work-section {
   display: flex;
