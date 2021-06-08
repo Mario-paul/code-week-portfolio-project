@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: #202020;
+  color: white;
 }
 
 a {
@@ -167,18 +168,54 @@ a {
 
 #work-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10cm;
+  flex-direction: column;
+  height: 20cm;
   background-color: blueviolet;
 }
 
 #about-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10cm;
   background-color: tomato;
+  text-align: center;
+}
+
+#skills-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20cm;
+  background-color: burlywood;
+  text-align: center;
+}
+
+#skills-section img{
+  width: 50px;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -187,4 +224,32 @@ footer {
   align-items: center;
   height: 10cm;
   background-color: lightblue;
+}
+
+/* Images of project */
+
+#project1 {
+    height: 50%;
+    background-image: url("../images/project1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#project2 {
+    height: 50%;
+    background-image: url("../images/project2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#project3 {
+    height: 50%;
+    background-image: url("../images/project3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Text inside project 1's page */
+#project1-text {
+    display: flex;
 }
