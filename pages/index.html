@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Baha.com</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <!-- <header class="header">
         <a href="" class="logo">BAHA</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
         <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -20,29 +20,41 @@
             <li><a href="#about-section">About</a></li>
             <li><a href="#contact-footer">Contact</a></li>
         </ul>
-    </header>
+    </header> -->
 
+    <!-- Script for injecting header -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="../includes/header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <!-- --- Bio section --- -->
     <section id="bio-section">
         <h1>Ferdinand Baha</h1>
         <img src="../images/face.jpg" alt="images">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
         </p>
         <aside>“GOOD DESIGN DOESNT DATE”
             <br>
             -Harry Seidler</aside>
     </section>
 
+    <!-- --- Work section --- -->
     <section id="work-section">
 
         <a href="work.html">Work</a>
 
     </section>
 
+    <!-- --- About section --- -->
     <section id="about-section">
-
         <a href="about.html">About</a>
     </section>
 
+    <!-- --- Footer section --- -->
     <footer id="contact-footer">
         <h1>Contact me</h1>
     </footer>
