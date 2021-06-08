@@ -12,11 +12,14 @@ a {
 }
 
 /* header */
-
+.header-spacing {
+  padding: 34px;
+  display: flex;
+}
 .header {
   top: 0;
-  background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.623);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -27,19 +30,19 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .header li a {
   display: block;
   padding: 20px 20px;
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f400;
   text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #f4f4f400;
 }
 
 .header .logo {
