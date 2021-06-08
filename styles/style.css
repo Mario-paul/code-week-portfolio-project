@@ -165,9 +165,8 @@ a {
 
 #work-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10cm;
+  flex-direction: column;
+  height: 20cm;
   background-color: blueviolet;
 }
 
@@ -187,3 +186,30 @@ footer {
   background-color: lightblue;
 }
 
+/* Images of project */
+
+#project1 {
+    height: 50%;
+    background-image: url("../images/project1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#project2 {
+    height: 50%;
+    background-image: url("../images/project2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#project3 {
+    height: 50%;
+    background-image: url("../images/project3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Text inside project 1's page */
+#project1-text {
+    display: flex;
+}
