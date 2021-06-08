@@ -33,8 +33,12 @@
         w3.includeHTML();
     </script>
 
+    <!-- Nav bar transition script. Will load script file on /scripts folder -->
+    <script src="../scripts/navbar-transition.js"></script>
+
+
     <!-- BIO SECTION -->
-    
+
     <section id="bio-section">
         <h1>Ferdinand Baha</h1>
         <img src="../images/photo-by-face-generator_60bfac77bf0615000dc8e40e.jpg" alt="face image">
@@ -127,18 +131,19 @@
     <!-- Contact me -->
     <section id="contact-me">
         <h3>Let`s talk!</h3>
-            <h1>Contact Me</h1>
-            <p>Want to collaborate? I'd love to hear from you.</p>
-            <hr>
-            
+        <h1>Contact Me</h1>
+        <p>Want to collaborate? I'd love to hear from you.</p>
+        <hr>
+
         <div class="message-box">
-            
+
             <h3>send me a message</h3>
             <form action="">
                 <input class="name-box" name="test" type="text" placeholder="Name" value minlength="2" required>
                 <input class="email-box" name="contactEmail" type="email" placeholder="Email" value required>
                 <input class="subject-box" name="contactSubject" type="text" placeholder="Subject" value>
-                <textarea name="contactMessage" placeholder="How can I help you?" rows="10" cols="50" required></textarea>
+                <textarea name="contactMessage" placeholder="How can I help you?" rows="10" cols="50"
+                    required></textarea>
                 <input type="submit" value="Message Me!">
             </form>
         </div>
