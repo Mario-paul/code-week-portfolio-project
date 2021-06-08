@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: Helvetica, sans-serif;
   background-color: #202020;
+  color: white;
 }
 
 a {
@@ -185,3 +186,4 @@ footer {
   height: 10cm;
   background-color: lightblue;
 }
+
