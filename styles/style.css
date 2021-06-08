@@ -172,10 +172,47 @@ a {
 
 #about-section {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10cm;
   background-color: tomato;
+  text-align: center;
+}
+
+#skills-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20cm;
+  background-color: burlywood;
+  text-align: center;
+}
+
+#skills-section img{
+  width: 50px;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
