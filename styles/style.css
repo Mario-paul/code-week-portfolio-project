@@ -268,6 +268,7 @@ a {
   background-color: tomato;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
+  height: 100%;
 }
 
 /***** Skills Section****/
@@ -275,12 +276,10 @@ a {
 #skills-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  text-align: center;
+  justify-content: space-evenly;
   align-items: center;
   font-family: 'Roboto Mono', monospace;
-  height: 1000px;
+  height: 100%;
   background-color: burlywood;
   text-align: center;
   padding-bottom: 40px;
@@ -292,16 +291,19 @@ a {
   width: 30%;
   height: 1px;
   border: none;
+  margin-bottom: 20px;
+  align-self: center;
 }
 
 #skills-section img {
   width: 50px;
 }
 
-#skills-section div{
-  display: block;
+#skills-section>div{
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
 }
 
 
@@ -310,6 +312,28 @@ a {
   font-size: 3rem;
   margin-top: 0;
 }
+
+@media only screen and (min-width: 600px){
+
+  #skills-section>div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    
+  }
+
+ article{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20 20;
+  }
+}
+
+
+
 /***** Contact Me Section *****/
 
 #contact-me {
@@ -318,7 +342,7 @@ a {
   justify-content: space-around;
   align-items: center;
   font-family: 'Roboto Mono', monospace;
-  height: 1500px;
+  height: 100%;
   margin-top: 30px;
 }
 
@@ -328,7 +352,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 form {
@@ -356,7 +379,7 @@ form {
   border:none;
   line-height: 2rem;
   font-size: 1rem;
-  width: 30%;
+  max-width: 50%;
   height: 50px;
   letter-spacing: 2px;
 }
@@ -371,7 +394,7 @@ form {
   border: none;
   background-color: rgba(255, 255, 255, 0.6);
   height: 1px;
-  margin-top: 0;
+  margin-top: 30px;
   opacity: 0.5;
 }
 
@@ -395,7 +418,7 @@ form {
 
 #contact-me h1{
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 40px;
   font-size: 3rem;
 }
 
@@ -416,7 +439,7 @@ form {
 @media only screen and (min-width: 600px){
 
   #contact-me{
-    height: 1100px;
+    height: 100%;
   }
 
   .desktop-contact-me{
