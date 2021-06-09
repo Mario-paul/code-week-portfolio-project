@@ -361,21 +361,61 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 10cm;
-  background-color: tomato;
   text-align: center;
   font-family: 'Roboto Mono', monospace;
   height: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
 }
+
+
+
+#about-section hr{
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 30%;
+  height: 1px;
+  border: none;
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+.about-me-h1{
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: center;
+  align-self: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+ #about-section{
+   width: 100vw;
+ }
+
+ .location-hobbies{
+   display: flex;
+   justify-content: space-evenly;
+
+ }
+
+ .background{
+   align-self: center;
+   width: 70%;
+ }
+
+}
+
+
+
 
 /***** Skills Section****/
 
 #skills-section {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  align-content: center;
   font-family: 'Roboto Mono', monospace;
   height: 100%;
   background-color: burlywood;
@@ -397,11 +437,22 @@ a {
   width: 50px;
 }
 
+#skills-section img:hover{
+  transform: scale(1.5);
+}
+
 #skills-section>div{
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  width: 100%;
+  align-self: center;
+  width: 300px;
+}
+
+#skills-section>div>article>p{
+  text-align: center;
+  color: black;
 }
 
 
@@ -409,15 +460,26 @@ a {
 .my-skills{
   font-size: 3rem;
   margin-top: 0;
+  width: 50%;
+  text-align: center;
+  align-self: center;
 }
 
 @media only screen and (min-width: 600px){
 
+  #skills-section{
+    width: 100vw;
+  }
+
   #skills-section>div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     align-items: baseline;
+    width: fit-content;
+    margin-left: 50px;
+    margin-right: 50px;
+    
     
   }
 
@@ -426,7 +488,9 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 20 20;
+    width: fit-content;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 
@@ -477,9 +541,10 @@ form {
   border:none;
   line-height: 2rem;
   font-size: 1rem;
-  max-width: 50%;
+  min-width: 50%;
   height: 50px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 #contact-me input[type=submit]:hover{
@@ -520,6 +585,10 @@ form {
   font-size: 3rem;
 }
 
+.send-message-h3{
+  text-align: center;
+}
+
 .talk{
   margin-top: 30px;
   margin-bottom: 0;
@@ -532,12 +601,14 @@ form {
   margin-bottom: 0;
   color: rgba(255, 255, 255, 0.6);
   opacity: 0.5;
+  text-align: center;
 }
 
 @media only screen and (min-width: 600px){
 
   #contact-me{
     height: 100%;
+    width: 100vw;
   }
 
   .desktop-contact-me{
