@@ -10,7 +10,7 @@
     <!-- New meta that helps with responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
@@ -28,29 +28,27 @@
 
     <!-- Script for injecting header -->
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <div w3-include-html="../includes/header.html"></div>
+    <div w3-include-html="./includes/header.html"></div>
     <script>
         w3.includeHTML();
     </script>
 
     <!-- Nav bar transition script. Will load script file on /scripts folder -->
-    <script src="../scripts/navbar-transition.js"></script>
+    <script src="./scripts/navbar-transition.js"></script>
 
     <!-- BIO SECTION -->
 
     <section id="bio-section">
         <h1>Ferdinand Baha</h1>
-        <img src="../images/photo-by-face-generator_60bfac77bf0615000dc8e40e.jpg" alt="face image">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book.
+        <img src="./images/photo-by-face-generator_60bfac77bf0615000dc8e40e.jpg" alt="face image">
+        <p>Hi! My name is Ferdinand. I’m passionate about UX research and web development. Come check out some of my work!
         </p>
         <aside>
             “GOOD DESIGN DOESNT DATE”
             <br>
             -Harry Seidler
         </aside>
-        <form method="get" action="../pages/resume.html">
+        <form method="get" action="./pages/resume.html">
             <button id="bio-button" type="submit">Resume</button>
         </form>
     </section>
@@ -62,9 +60,9 @@
     <!-- WORK SECTION -->
 
     <section id="work-section">
-        <a id="project1" href="./project1.html"></a>
-        <a id="project2" href="./project2.html"></a>
-        <a id="project3" href="./project3.html"></a>
+        <a id="project1" href="./pages/project1.html"></a>
+        <a id="project2" href="./pages/project2.html"></a>
+        <a id="project3" href="./pages/project3.html"></a>
     </section>
 
     <!-- About section -->
@@ -74,9 +72,11 @@
               <h1 class="about-me-h1">About Me</h1>
               <hr>
               <h1>Background</h1>
-              <p>&#60;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book&#62;</p>
+              <p>&#60;
+                Hi! My name is Ferdinand. I’m 30 years old and love to travel the world. I’m passionate about UX research and web development. Come check out some of my work! I’m 30 years old and love to travel the world. 
+                My favorite part of traveling is discovering new cuisines, petting all the dogs I see, and networking with other UI/UX designers! I’m a huge dog lover. 
+                This is my dog Charlie. He travels with me everywhere and loves everyone that he meets.
+              &#62;</p>
             </article>
 
         </div>   
@@ -101,25 +101,25 @@
         <hr>
     <div>
         <article class="social-scientist">
-            <img src="./images/social-scientist.png" alt="">
+            <img src="/images/social-scientist.png" alt="">
             <h1>Social Scientist</h1>
             <p>My anthropology background and experience in the field give me a solid foundation for my user research.
                 I'm fascinated by people and why they do what they do.</p>
         </article>
         <article class="data-synthesizer">
-            <img src="./images/data-syntesizer.png" alt="">
+            <img src="/images/data-syntesizer.png" alt="">
             <h1>Data Synthesizer</h1>
             <p>After diving into the data, we have to know how to tease apart the pieces that are useful. I love looking at business needs and user needs and finding where they meet.</p>
         </article>
         <article class="clear-communicator">
-            <img src="./images/clear-communicator.png" alt="">
+            <img src="/images/clear-communicator.png" alt="">
             <h1>Clear Communicator</h1>
             <p>I love storytelling in all forms. Whether it's theater, the written word, or art, I've always loved
                 connecting to people through a story. Now I'm doing it for a living!</p>
 
         </article>
         <article class="purposeful-pixels">
-            <img src="./images/purposful-pixels.png" alt="">
+            <img src="/images/purposful-pixels.png" alt="">
             <h1>Purposeful Pixels</h1>
             <p>They say logic makes you think and emotion makes you act. Great art is supposed to make us feel
                 something. Great UI should get us to feel something and then ACT!</p>
@@ -164,7 +164,7 @@
 
     <!-- --- Footer section --- -->
     <footer id="contact-footer">
-        <h1>Contact me</h1>
+        <h1>Social Media links</h1>
     </footer>
 
 </body>
