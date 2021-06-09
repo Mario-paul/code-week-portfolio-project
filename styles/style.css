@@ -251,11 +251,109 @@ a {
 /* WORK SECTION */
 
 #work-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 20cm;
-  background-color: blueviolet;
+  height: auto;
+  background-color:#202020;
 }
+
+#work-section > a {
+  height: 50vw;
+}
+
+
+/* Images of work section */
+
+#project1 {
+  background-image: url("../images/project1.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+#project2 {
+  background-image: url("../images/project2.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+#project3 {
+  background-image: url("../images/project3.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+/* CSS FOR PROJECT 1 HTML */
+
+.projects-names {
+  margin: 10%;
+  text-align: center;
+  font-family: Ibmplexsans, sans-serif;
+  /* font-family: 'Roboto Mono', monospace; */
+}
+
+.projects-names > h1 {
+  font-size: 10vw;
+}
+
+/* Text inside project 1's page */
+#project1-text {
+  margin: 10%;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#project1-text > img {
+  width: 90vw;
+  height: 60vw;
+  padding-bottom: 10%;
+}
+
+.project1-bold {
+  font-size: 7vw;
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+
+.project1-divs {
+  margin-top: 7%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+/* CSS FOR PROJECT 2 HTML */
+
+/* CSS FOR PROJECT 3 HTML */
+
+
+@media only screen and (min-width: 600px) {
+
+  .projects-names > h1 {
+    font-size: 6vw;
+  }
+
+  #project1-text > p,
+  .project1-divs > p {
+    font-size: 2vw;
+  }
+
+  #project1-text > img {
+    width: 70vw;
+    height: 40vw;
+    padding-bottom: 10%;
+  }
+}
+ 
+
+/* ABOUT SECTION */
 
 /***** About Section****/
 
@@ -467,32 +565,4 @@ footer {
   align-items: center;
   height: 10cm;
   background-color: lightblue;
-}
-
-/* Images of project */
-
-#project1 {
-  height: 50%;
-  background-image: url("../images/project1.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#project2 {
-  height: 50%;
-  background-image: url("../images/project2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-#project3 {
-  height: 50%;
-  background-image: url("../images/project3.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-/* Text inside project 1's page */
-#project1-text {
-  display: flex;
 }
