@@ -355,6 +355,8 @@ a {
 
 /* ABOUT SECTION */
 
+/***** About Section****/
+
 #about-section {
   display: flex;
   flex-direction: column;
@@ -363,29 +365,61 @@ a {
   height: 10cm;
   background-color: tomato;
   text-align: center;
+  font-family: 'Roboto Mono', monospace;
 }
+
+/***** Skills Section****/
 
 #skills-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
+  text-align: center;
   align-items: center;
-  height: 20cm;
+  font-family: 'Roboto Mono', monospace;
+  height: 1000px;
   background-color: burlywood;
   text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+#skills-section hr{
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 30%;
+  height: 1px;
+  border: none;
 }
 
 #skills-section img {
   width: 50px;
 }
 
+#skills-section div{
+  display: block;
+  align-items: center;
+  width: 50%;
+}
+
+
+
+.my-skills{
+  font-size: 3rem;
+  margin-top: 0;
+}
+/***** Contact Me Section *****/
+
 #contact-me {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 1300px;
+  font-family: 'Roboto Mono', monospace;
+  height: 1500px;
+  margin-top: 30px;
 }
+
 
 .message-box {
   display: flex;
@@ -411,7 +445,8 @@ form {
   border: none;
   line-height: 2rem;
   font-size: 1rem;
-  width: 100%;
+  width: 90%;
+
 }
 
 #contact-me input[type=submit]{
@@ -421,13 +456,21 @@ form {
   font-size: 1rem;
   width: 30%;
   height: 50px;
+  letter-spacing: 2px;
+}
+
+#contact-me input[type=submit]:hover{
+  background-color:rgba(255, 255, 255, 0.6);
+  transition: 1s;
 }
 
 #contact-me hr{
-  width: 40%;
+  width: 30%;
   border: none;
-  background-color: gray;
-  height: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 1px;
+  margin-top: 0;
+  opacity: 0.5;
 }
 
 #contact-me h3{
@@ -438,6 +481,7 @@ form {
   line-height: 2rem;
   padding-top: 20px;
   padding-bottom: 100px;
+  text-align: center;
 }
 
 .contact-info-h3{
@@ -446,6 +490,50 @@ form {
 .message-box h3{
   padding-bottom: 40px;
 }
+
+#contact-me h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.talk{
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.5;
+}
+
+.collab{
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 600px){
+
+  #contact-me{
+    height: 1100px;
+  }
+
+  .desktop-contact-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 70%;
+    padding-bottom: 60px;
+  }
+
+  .message-box{
+    margin-right: 40px;
+  }
+ 
+}
+
+
+/***** Contact Me Section END*****/
 
 
 footer {

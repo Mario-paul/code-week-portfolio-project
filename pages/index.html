@@ -36,7 +36,6 @@
     <!-- Nav bar transition script. Will load script file on /scripts folder -->
     <script src="../scripts/navbar-transition.js"></script>
 
-
     <!-- BIO SECTION -->
 
     <section id="bio-section">
@@ -51,7 +50,7 @@
             <br>
             -Harry Seidler
         </aside>
-        <form method="get" action="../includes/Resume.docx">
+        <form method="get" action="../pages/resume.html">
             <button id="bio-button" type="submit">Resume</button>
         </form>
     </section>
@@ -95,7 +94,8 @@
 
     <!-- Skills section -->
     <section id="skills-section">
-        <h1>My Skills</h1>
+        <h1 class="my-skills">My Skills</h1>
+        <hr>
         <div class="social-scientist">
             <img src="/images/social-scientist.png" alt="">
             <h1>Social Scientist</h1>
@@ -105,10 +105,7 @@
         <div class="data-synthesizer">
             <img src="/images/data-syntesizer.png" alt="">
             <h1>Data Synthesizer</h1>
-            <p>After diving into the data, we have to know how to tease apart the pieces that are useful. I love looking
-                at business needs and user needs and finding where they meet.</p>
-
-
+            <p>After diving into the data, we have to know how to tease apart the pieces that are useful. I love looking at business needs and user needs and finding where they meet.</p>
         </div>
         <div class="clear-communicator">
             <img src="/images/clear-communicator.png" alt="">
@@ -128,13 +125,12 @@
 
     <!-- Contact me -->
     <section id="contact-me">
-        <h3>Let`s talk!</h3>
-        <h1>Contact Me</h1>
-        <p>Want to collaborate? I'd love to hear from you.</p>
-        <hr>
-
+            <h3 class="talk">Let`s talk!</h3>
+            <h1>Contact Me</h1>
+            <p class="collab"> Want to collaborate? I'd love to hear from you.</p>
+            <hr>
+      <div class="desktop-contact-me">
         <div class="message-box">
-
             <h3>send me a message</h3>
             <form action="">
                 <input class="name-box" name="test" type="text" placeholder="Name" value minlength="2" required>
@@ -155,11 +151,10 @@
             <div>
                 <h3>Call Me At</h3>
                 <p>Phone: +1 234 567 8910</p>
-
             </div>
 
         </div>
-
+       </div>
 
     </section>
 
