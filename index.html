@@ -4,30 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-
     <title>Baha.com</title>
     <!-- New meta that helps with responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <!-- <header class="header">
-        <a href="" class="logo">BAHA</a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-
-        <ul class="menu">
-            <li><a href="#work-section">Work</a></li>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#contact-footer">Contact</a></li>
-        </ul>
-    </header> -->
+    <!-- HEADER SECTION -->
+    <!-- Script for injecting header -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="./includes/header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- Nav bar transition script. Will load script file on /scripts folder -->
+    <script src="./scripts/navbar-transition.js"></script>
 
     <!-- BIO SECTION -->
-
     <section id="bio-section">
         <div>
             <h1>Frida </h1>
@@ -47,12 +41,7 @@
         </form>
     </section>
 
-
-
-
-
     <!-- WORK SECTION -->
-
     <section id="work-section">
         <a id="project1" href="./pages/project1.html"></a>
         <a id="project2" href="./pages/project2.html"></a>
@@ -63,26 +52,30 @@
     <section id="about-section">
         <div class="background">
             <article>
-              <h1 class="about-me-h1">About Me</h1>
-              <hr>
-              <h1 class="background-h1">Background</h1>
-              <p>Hi! My name is Ferdinand. I’m passionate about UX research and web development. Come check out some of my work! I’m 30 years old and love to travel the world. My favorite part of traveling is discovering new cuisines, petting all the dogs I see, and networking with other UI/UX designers! I’m a huge dog lover. This is my dog Charlie. He travels with me everywhere and loves everyone that he meets.</p>
+                <h1 class="about-me-h1">About Me</h1>
+                <hr>
+                <h1 class="background-h1">Background</h1>
+                <p>Hi! My name is Ferdinand. I’m passionate about UX research and web development. Come check out some
+                    of my work! I’m 30 years old and love to travel the world. My favorite part of traveling is
+                    discovering new cuisines, petting all the dogs I see, and networking with other UI/UX designers! I’m
+                    a huge dog lover. This is my dog Charlie. He travels with me everywhere and loves everyone that he
+                    meets.</p>
             </article>
 
         </div>
         <div class="location-hobbies">
             <article id="about-location">
-              <h1>Location</h1>
-              <img src="/images/location.png" alt="">
-              <p>Munich, Germay</p>
+                <h1>Location</h1>
+                <img src="/images/location.png" alt="">
+                <p>Munich, Germay</p>
             </article>
 
             <article id="about-hobbies">
-              <h1>Hobbies</h1>
-              <img src="/images/controller.png" alt="">
-              <p>
-                Dog Lover Food Traveling Design Gaming  
-              </p>
+                <h1>Hobbies</h1>
+                <img src="/images/controller.png" alt="">
+                <p>
+                    Dog Lover Food Traveling Design Gaming
+                </p>
             </article>
         </div>
     </section>
@@ -158,21 +151,12 @@
 
     <!-- --- Footer section --- -->
     <footer id="contact-footer">
-       <a href="https://www.instagram.com/"><img src="/images/noun_Camera_2344228.png" alt=""></a> 
-       <a href="https://www.linkedin.com/"><img src="/images/noun_linkedin_2045918.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="/images/noun_Camera_2344228.png" alt=""></a>
+        <a href="https://www.linkedin.com/"><img src="/images/noun_linkedin_2045918.png" alt=""></a>
         <a href="https://twitter.com/"><img src="/images/noun_Twitter_101102.png" alt=""></a>
         <a href="https://www.facebook.com/"><img src="/images/noun_Facebook_1515903.png" alt=""></a>
     </footer>
 
-    <!-- Script for injecting header -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <div w3-include-html="./includes/header.html"></div>
-    <script>
-        w3.includeHTML();
-    </script>
-
-    <!-- Nav bar transition script. Will load script file on /scripts folder -->
-    <script src="./scripts/navbar-transition.js"></script>
 </body>
 
 </html>
