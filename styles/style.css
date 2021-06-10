@@ -312,9 +312,9 @@ a {
 }
 
 .button1 {
-  width: 19vw;
-  height: 6vw;
-  font-size: 2vw;
+  width: 15vw;
+  height: 7vw;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,7 +325,7 @@ a {
   text-align: center;
   box-sizing: border-box;
   border-radius: 0.12em;
-  font-weight: 300;
+  /* font-weight: 300; */
   color: burlywood;
   text-align: center;
   transition: all 0.2s;
