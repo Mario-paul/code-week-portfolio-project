@@ -357,16 +357,20 @@ a {
     font-size: 3vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0.4em auto;
+    align-self: center;
   }
 
   #bio-button {
     font-size: 30vw;
   }
+
+  #bio-section{
+    flex-direction: row;
+  }
+  
 }
 
-/*  */
+/*  Bio-section-End*/
 
 @media only screen and (min-width: 600px) {
   #bio-section > img {
@@ -565,12 +569,25 @@ hr {
 
 /* CSS FOR PROJECT 2 HTML */
 
-/* insert code here - delete me */
+.projects-background-image-2 {
+  background-image: url("../images/project2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
+}
 
 /* CSS FOR PROJECT 3 HTML */
 
-/* insert code here - delete me */
+.projects-background-image-3 {
+  background-image: url("../images/project3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
+}
 
+/* @media */
 @media only screen and (min-width: 600px) {
 
   .projects-names > h1 {
@@ -623,7 +640,7 @@ hr {
 
 .about-me-h1 {
   font-size: 5vh;
-  margin-top: 0;
+  margin-top: 50px;
   text-align: center;
   align-self: center;
 
@@ -749,7 +766,7 @@ line-height: 2rem;
 
 .my-skills {
   font-size: 5vh;
-  margin-top: 0;
+  margin-top: 50px;
   width: 50%;
   text-align: center;
   align-self: center;
