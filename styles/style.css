@@ -230,6 +230,7 @@ a {
   height: 100vh;
 }
 
+<<<<<<< HEAD
 /*#home>div {
   /* width: 100vw;
   display: flex;
@@ -240,6 +241,10 @@ a {
 
 #home > div > h1 {
   font-size: 8vw;
+=======
+#home>div>h1 {
+  font-size: 50px;
+>>>>>>> 9b67c1bece9f44f54d01587dae41577cc061ad01
   text-align: center;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -930,4 +935,10 @@ footer img {
   background-color: #202020;
   width: 1%;
   height: 0;
+}
+
+/* CSS for Resume.html page */
+
+#resume-body{
+  background-color: #202020;
 }
