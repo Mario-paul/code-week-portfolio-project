@@ -52,6 +52,7 @@ body {
     background-position-y: top;
     background-position-x: center; 
   }
+  
 }
 
 /* HEADER SECTION */
@@ -226,13 +227,9 @@ a {
   display: flex;
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
-  /* font-size: 80%; */
   align-items: center;
-  /* flex-direction: column; */
   color: white;
   height: 100vh;
-  /* background-color: #202020; */
-  /* padding: 49vh none; */  
 }
 
 #home>div>h1 {
@@ -265,7 +262,7 @@ a {
   color: white;
   height: 30%;
   background-color: #202020;
-  padding: 15% 6%;
+  padding: 8% 6%;
 }
 
 #bio-section > p {
@@ -429,32 +426,46 @@ a {
 
 
 .projects-names {
-  margin: 10%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
+  width: 100%;
 }
 
 .projects-names > h1 {
-  font-size: 10vw;
+  font-size: 7vw;
+}
+
+.projects-background-image {
+  background-image: url("../images/project1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
 }
 
 /* Text inside project 1's page */
 
 #project1-text {
-  margin: 10%;
+  margin: 5%;
   font-family: 'Josefin Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .project1-text-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
+}
+
+.project1-text-container {
+  font-size: 3.5vw;
 }
 
 #project1-text > img {
@@ -471,11 +482,13 @@ a {
   color: white;
 }
 
+.project1-divs > p {
+  text-align: center;
+}
+
 .project1-divs {
-  margin-top: 7%;
-  margin: 5vw;
   display: flex;
-  justify-content: center;
+  /* justify-content: flex-start; */
   flex-direction: column;
 }
 
@@ -494,6 +507,10 @@ a {
   color: #202020;
 }
 
+#project1-problem {
+  width: 30%;
+}
+
 
 
 /* CSS FOR PROJECT 2 HTML */
@@ -507,12 +524,18 @@ a {
 @media only screen and (min-width: 600px) {
 
   .projects-names > h1 {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   #project1-text > p,
-  .project1-divs > p {
-    font-size: 2vw;
+  .project1-divs > p,
+  .project1-text-container > p {
+    font-size: 1.5vw;
+  }
+
+  .project1-divs > b {
+    font-size: 2.5vw; 
+    font-weight: bolder;
   }
 
   #project1-text > img {
@@ -623,10 +646,11 @@ line-height: 2rem;
   text-align: center;
   padding-bottom: 40px;
   padding-top: 60px;
+  color: black;
 }
 
 #skills-section hr {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: black;
   width: 30%;
   height: 1px;
   border: none;
@@ -642,7 +666,7 @@ line-height: 2rem;
   transform: scale(1.5);
 }
 
-#skills-section>div {
+#skills-section > div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -652,19 +676,10 @@ line-height: 2rem;
 }
 
 
-#skills-section > div h1{
-  color: black;
-  
-
-}
 
 #skills-section > div > article > p {
   text-align: center;
-  color: black;
-
   line-height: 2rem;
-
-
 }
 
 
