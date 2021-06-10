@@ -351,13 +351,17 @@ a {
     font-size: 3vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0.4em auto;
+    align-self: center;
   }
 
   #bio-button {
     font-size: 30vw;
   }
+
+  #bio-section{
+    flex-direction: row;
+  }
+  
 }
 
 /*  Bio-section-End*/
@@ -616,7 +620,7 @@ hr {
 
 .about-me-h1 {
   font-size: 5vh;
-  margin-top: 0;
+  margin-top: 50px;
   text-align: center;
   align-self: center;
 
@@ -742,7 +746,7 @@ line-height: 2rem;
 
 .my-skills {
   font-size: 5vh;
-  margin-top: 0;
+  margin-top: 50px;
   width: 50%;
   text-align: center;
   align-self: center;
