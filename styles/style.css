@@ -15,9 +15,7 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  /* background-position-y:; */
-    /* max-width: 100vw; */
-  /* overflow-x:hidden; */
+
 }
 
 body {
@@ -223,7 +221,7 @@ a {
 
 }
 
-#home>div {
+#home > div {
   display: flex;
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
@@ -240,8 +238,8 @@ a {
 }*/
 
 
-#home>div>h1 {
-  font-size: 50px;
+#home > div > h1 {
+  font-size: 8vw;
   text-align: center;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -465,11 +463,18 @@ a {
 }
 
 .project1-text-container {
+  margin: 5%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
+}
+
+#project1-role,
+#project1-problem,
+#project1-time {
+  margin: 5%;
 }
 
 .project1-text-container {
