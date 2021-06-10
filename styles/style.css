@@ -9,15 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
-.main-body {
-  background-image: url("/images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-
-}
-
 body {
   margin: 0;
   color: white;
@@ -36,21 +27,6 @@ body {
   100% {
     opacity: 1;
   }
-}
-
-@media only screen and (max-width: 600px) {
-
-  main-body {
-    /* background-color: lightblue; */
-    background-image: url("/images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg");
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
-    background-position-y: top;
-    background-position-x: center; 
-  }
-  
 }
 
 /* HEADER SECTION */
@@ -127,7 +103,7 @@ a {
 }
 
 #header .menu-icon .navicon {
-  background: #333;
+  background: rgb(255, 255, 255);
   display: block;
   height: 2px;
   position: relative;
@@ -137,7 +113,7 @@ a {
 
 #header .menu-icon .navicon:before,
 #header .menu-icon .navicon:after {
-  background: #333;
+  background: rgb(255, 255, 255);
   content: '';
   display: block;
   height: 100%;
@@ -209,7 +185,7 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  /* box-sizing: border-box;   */
+  box-sizing: border-box;  
   background-position: top;
 
   /* height: 100vw; */
@@ -459,7 +435,6 @@ a {
 .projects-body {
   background-color: #202020;
 }
-
 
 .projects-names {
   text-align: center;
@@ -723,14 +698,10 @@ line-height: 2rem;
   width: 300px;
 }
 
-
-
 #skills-section > div > article > p {
   text-align: center;
   line-height: 2rem;
 }
-
-
 
 .my-skills {
   font-size: 5vh;
@@ -963,7 +934,6 @@ footer img {
   width: 50px;
   height: 50px;
 }
-
 
 @media only screen and (min-width: 600px){
   footer{
