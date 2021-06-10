@@ -609,6 +609,10 @@ hr {
 }
 
 
+#work-section > hr {
+  margin-bottom: 5%;
+  background-color: #202020;
+}
 
 .about-me-h1 {
   font-size: 5vh;
