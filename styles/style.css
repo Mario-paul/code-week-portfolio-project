@@ -918,3 +918,9 @@ footer img {
   width: 1%;
   height: 0;
 }
+
+/* CSS for Resume.html page */
+
+#resume-body{
+  background-color: #202020;
+}
