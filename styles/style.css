@@ -533,12 +533,25 @@ a {
 
 /* CSS FOR PROJECT 2 HTML */
 
-/* insert code here - delete me */
+.projects-background-image-2 {
+  background-image: url("../images/project2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
+}
 
 /* CSS FOR PROJECT 3 HTML */
 
-/* insert code here - delete me */
+.projects-background-image-3 {
+  background-image: url("../images/project3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
+}
 
+/* @media */
 @media only screen and (min-width: 600px) {
 
   .projects-names > h1 {
