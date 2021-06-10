@@ -269,27 +269,25 @@ a {
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
   font-size: 80%;
-  align-items: center;
+  align-content: center;
   flex-direction: column;
   color: white;
   height: 30%;
   background-color: #202020;
   padding: 15% 6%;
+  text-align: center;
 }
 
-#bio-section > p {
+#bio-section p {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   max-width: 80%;
   font-size: 2.5vw;
+  padding-bottom: 10px;
+  align-self: center;
+  font-size: 1rem;
 }
 
-#bio-section > aside {
-  font-size: 2vw;
-  padding-top: 5%;
-  padding-left: 10%;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
 
 #bio-section > div > h1 {
@@ -311,13 +309,21 @@ a {
     blink-caret .75s step-end infinite;
 }
 
-#bio-section > div {
-  width: 100vw;
+#bio-section div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
+
+
+#bio-section img{
+  height: 100%;
+  width: 50%;
+  align-self: center;
+  border-radius: 50%;
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -343,10 +349,11 @@ a {
   }
 }
 
-#bio-section > form {
+#bio-section  form {
   width: 20%;
   padding-top: 10%;
   border-radius: 30%;
+  align-self: center;
 }
 
 #bio-button {
@@ -362,9 +369,20 @@ a {
 }
 
 @media only screen and (min-width: 600px) {
-  #bio-section>img {
-    width: 20vw;
+
+  #bio-section{
+    flex-direction: row;
   }
+
+  #bio-section img {
+    width: 50%;
+    height: 100%;
+  }
+
+  #bio-section p{
+    font-size: 2.5vw;
+  }
+
 }
 
 /* WORK SECTION */
@@ -542,7 +560,7 @@ a {
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   height: 100%;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-bottom: 40px;
 }
 
@@ -556,7 +574,8 @@ a {
   width: 30%;
   height: 1px;
   border: none;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   align-self: center;
 }
 
@@ -576,12 +595,13 @@ line-height: 2rem;
 
 }
 
-#about-location img {
+.location-hobbies img {
   width: 50px;
 }
 
-#about-hobbies img {
-  width: 50px;
+.location-hobbies img:hover {
+  transform: scale(1.5);
+  transition: 2s;
 }
 
 @media only screen and (min-width: 600px) {
@@ -593,11 +613,17 @@ line-height: 2rem;
   .location-hobbies {
     display: flex;
     justify-content: space-evenly;
+    width: 80%;
   }
 
   .background {
     align-self: center;
     width: 100%;
+  }
+
+  .background p{
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .background-h1 {
@@ -631,7 +657,7 @@ line-height: 2rem;
   background-color: burlywood;
   text-align: center;
   padding-bottom: 40px;
-  padding-top: 60px;
+  padding-top: 80px;
   color: black;
 }
 
@@ -640,7 +666,8 @@ line-height: 2rem;
   width: 30%;
   height: 1px;
   border: none;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   align-self: center;
 }
 
@@ -650,6 +677,7 @@ line-height: 2rem;
 
 #skills-section img:hover {
   transform: scale(1.5);
+  transition: 2s;
 }
 
 #skills-section>div {
@@ -694,14 +722,14 @@ line-height: 2rem;
     margin-right: 50px;
   }
 
-  article {
+  #skills-section article {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: fit-content;
-    margin-left: 3%;
-    margin-right: 3%;
+    width: 20vw;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 
@@ -883,6 +911,11 @@ footer img {
   height: 50px;
 }
 
+footer img:hover {
+  transform: scale(1.5);
+  transition: 1s ease-out 0.5s;
+}
+
 
 @media only screen and (min-width: 600px){
   footer{
@@ -890,7 +923,7 @@ footer img {
     justify-content: center;
     align-content: center;
     height: 100%;
-      width: 100vw;
+    width: 100vw;
   }
 
   footer img{
