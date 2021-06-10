@@ -180,13 +180,14 @@ a {
 /* HOME SECTION */
 
 #home {
-  background: url(../images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg) no-repeat center center fixed;
+  background-image: url(../images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   box-sizing: border-box;  
-  background-position: top;
+  background-position: top center;
+  background-repeat: no-repeat;
 
   /* height: 100vw; */
   min-height: 100vh;
@@ -194,7 +195,12 @@ a {
   /* display: flex;
   align-items: center;
   justify-content: center; */
+}
 
+@media only screen and (min-width: 600px) {
+  #home {
+    background-attachment: fixed;
+  }
 }
 
 #home > div {
@@ -510,6 +516,7 @@ hr {
 #project1-time {
   margin: 5%;
 }
+
 
 .project1-text-container {
   font-size: 3.5vw;
