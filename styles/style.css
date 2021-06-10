@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
 html {
   min-width: fit-content;
-}
-
-html {
-  /* min-width: fit-content; */
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +21,18 @@ body {
   /* top: auto; */
   /* max-width: 100vw; */
   /* overflow-x:hidden; */
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -304,27 +314,27 @@ a {
   background-color: #202020;
 }
 
-#work-section>a {
-  height: 50vw;
+#work-section > a {
+  height: 26vw;
 }
 
 
 /* Images of work section */
 
 #project1 {
-  background-image: url("../images/project1.png");
+  background-image: url("../images/project1.jpg");
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 
 #project2 {
-  background-image: url("../images/project2.png");
+  background-image: url("../images/project2.jpg");
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 
 #project3 {
-  background-image: url("../images/project3.png");
+  background-image: url("../images/project3.jpg");
   background-repeat: no-repeat;
   background-size: 100vw;
 }
@@ -354,7 +364,7 @@ a {
 
 #project1-text>img {
   width: 90vw;
-  height: 60vw;
+  height: 30vw;
   padding-bottom: 10%;
 }
 
@@ -411,14 +421,18 @@ a {
   height: 10cm;
   background-color: #202020;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Josefin Sans', sans-serif;
   height: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 
 }
 
+#about-section p{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: none;
 
+}
 
 #about-section hr {
   background-color: rgba(255, 255, 255, 0.6);
@@ -434,6 +448,12 @@ a {
   margin-top: 0;
   text-align: center;
   align-self: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.background>article>p{
+padding-left: 20px;
+padding-right: 20px;
 }
 
 
@@ -449,10 +469,33 @@ a {
 
   }
 
+<<<<<<< HEAD
   .background {
     align-self: center;
     width: 70%;
   }
+=======
+ .background{
+   align-self: center;
+   width: 100%;
+
+ }
+ .background-h1{
+   font-size: 2rem;
+ }
+
+ #about-location>h1{
+  font-size: 2rem;
+ }
+
+ #about-hobbies>h1{
+  font-size: 2rem;
+ }
+
+ #about-section p{
+   font-size: 1.5rem;
+ }
+>>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 
 }
 
@@ -478,7 +521,7 @@ a {
   width: 30%;
   height: 1px;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   align-self: center;
 }
 
@@ -497,11 +540,19 @@ a {
   align-items: center;
   align-self: center;
   width: 300px;
+  
+}
+
+#skills-section>div h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: none;
 }
 
 #skills-section>div>article>p {
   text-align: center;
   color: black;
+  font-family: 'Josefin Sans', sans-serif;
+
 }
 
 
@@ -541,6 +592,15 @@ a {
     margin-left: 3%;
     margin-right: 3%;
   }
+
+  #skills-section>div>article>h1{
+    font-size: 2rem;
+  }
+
+
+#skills-section p{
+  font-size: 1.5rem;
+}
 }
 
 
@@ -612,6 +672,7 @@ form {
 
 #contact-me h3 {
   text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .contact-info-box {
@@ -619,13 +680,31 @@ form {
   padding-top: 20px;
   padding-bottom: 100px;
   text-align: center;
+  
 }
 
+.contact-info-box>div>h3{
+  font-size: 1rem;
+}
+
+<<<<<<< HEAD
 .contact-info-h3 {
   padding-bottom: 20px;
 }
 
 .message-box h3 {
+=======
+
+.contact-info-h3{
+  padding-bottom: 20px;
+}
+
+.send-message-h3{
+  text-align: center;
+}
+
+.message-box h3{
+>>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
   padding-bottom: 40px;
 }
 
@@ -635,9 +714,13 @@ form {
   font-size: 3rem;
 }
 
+<<<<<<< HEAD
 .send-message-h3 {
   text-align: center;
 }
+=======
+
+>>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 
 .talk {
   margin-top: 30px;
@@ -674,6 +757,19 @@ form {
     margin-right: 40px;
   }
 
+<<<<<<< HEAD
+=======
+  .contact-info-h3{
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .send-message-h3{
+    text-align: center;
+    font-size: 1.5rem;
+  }
+ 
+>>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 }
 
 
@@ -682,8 +778,37 @@ form {
 
 footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+<<<<<<< HEAD
   height: 10cm;
   background-color: lightblue;
+=======
+  height: 100%;
+  background-color: burlywood;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer img{
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 600px){
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+    width: 100vw;
+}
+
+footer img{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+>>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 }
