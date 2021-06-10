@@ -46,8 +46,9 @@ body {
     background-attachment: fixed;
     background-size: 150vw;
     background-position-y: top;
-    background-position-x: center; */
+    background-position-x: center; 
   }
+  
 }
 
 /* HEADER SECTION */
@@ -231,12 +232,13 @@ a {
   padding: 49vh 200px;
 }
 
-#home>div {
+/*#home>div {
   /* width: 100vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; */
-}
+  justify-content: space-around; 
+}*/
+
 
 #home>div>h1 {
   font-size: 50px;
