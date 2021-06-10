@@ -227,13 +227,9 @@ a {
   display: flex;
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
-  /* font-size: 80%; */
   align-items: center;
-  /* flex-direction: column; */
   color: white;
   height: 100vh;
-  /* background-color: #202020; */
-  /* padding: 49vh none; */  
 }
 
 /*#home>div {
@@ -274,7 +270,7 @@ a {
   color: white;
   height: 30%;
   background-color: #202020;
-  padding: 15% 6%;
+  padding: 8% 6%;
 }
 
 #bio-section > p {
@@ -504,14 +500,9 @@ a {
   flex-direction: column;
 }
 
-<<<<<<< HEAD
-#project1-paragraph-description {
-  width: 40%;
-=======
 
 .project1-divs > p {
   font-size: 3.5vw;
->>>>>>> 5cd233ea84f60b5c39eb213c4a65d2bfba866ca0
 }
 
 #project1-solution {
@@ -731,10 +722,6 @@ line-height: 2rem;
     width: fit-content;
     margin-left: 50px;
     margin-right: 50px;
-<<<<<<< HEAD
-
-=======
->>>>>>> 5cd233ea84f60b5c39eb213c4a65d2bfba866ca0
   }
 
   article {
