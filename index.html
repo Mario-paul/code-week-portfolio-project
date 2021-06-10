@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body>
+<body class="main-body">
     <!-- <header class="header">
         <a href="" class="logo">BAHA</a>
         <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -26,11 +26,22 @@
         </ul>
     </header> -->
 
+    <!-- Script for injecting header -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div id="invisible-header" w3-include-html="./includes/header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <!-- Nav bar transition script. Will load script file on /scripts folder -->
+    <script src="./scripts/navbar-transition.js"></script>
+
     <!-- BIO SECTION -->
+    
 
     <section id="bio-section">
         <div>
-            <h1>Frida </h1>
+            <h1>Frida</h1>
             <h1>Baha</h1>
         </div>
         <!-- <img src="./images/photo-by-face-generator_60bfac77bf0615000dc8e40e.jpg" alt="face image"> -->
@@ -48,12 +59,13 @@
     </section>
 
 
-
-
-
     <!-- WORK SECTION -->
 
     <section id="work-section">
+        <div id="work-id-container">
+            <h1 id="work-id"> Projets </h1>
+        </div>
+
         <a id="project1" href="./pages/project1.html"></a>
         <a id="project2" href="./pages/project2.html"></a>
         <a id="project3" href="./pages/project3.html"></a>
@@ -158,21 +170,12 @@
 
     <!-- --- Footer section --- -->
     <footer id="contact-footer">
-       <a href="https://www.instagram.com/"><img src="/images/noun_Camera_2344228.png" alt=""></a> 
-       <a href="https://www.linkedin.com/"><img src="/images/noun_linkedin_2045918.png" alt=""></a>
+        <a href="https://www.instagram.com/"><img src="/images/noun_Camera_2344228.png" alt=""></a> 
+        <a href="https://www.linkedin.com/"><img src="/images/noun_linkedin_2045918.png" alt=""></a>
         <a href="https://twitter.com/"><img src="/images/noun_Twitter_101102.png" alt=""></a>
         <a href="https://www.facebook.com/"><img src="/images/noun_Facebook_1515903.png" alt=""></a>
     </footer>
 
-    <!-- Script for injecting header -->
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <div w3-include-html="./includes/header.html"></div>
-    <script>
-        w3.includeHTML();
-    </script>
-
-    <!-- Nav bar transition script. Will load script file on /scripts folder -->
-    <script src="./scripts/navbar-transition.js"></script>
 </body>
 
 </html>
