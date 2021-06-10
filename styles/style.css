@@ -654,10 +654,11 @@ line-height: 2rem;
   text-align: center;
   padding-bottom: 40px;
   padding-top: 60px;
+  color: black;
 }
 
 #skills-section hr {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: black;
   width: 30%;
   height: 1px;
   border: none;
@@ -683,19 +684,10 @@ line-height: 2rem;
 }
 
 
-#skills-section > div h1{
-  color: black;
-  
-
-}
 
 #skills-section > div > article > p {
   text-align: center;
-  color: black;
-
   line-height: 2rem;
-
-
 }
 
 
