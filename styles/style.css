@@ -43,8 +43,7 @@ body {
     background-attachment: fixed;
     background-size: 150vw;
     background-position-y: top;
-    background-position-x: center;
-    background-
+    background-position-x: center;    
   }
 }
 
@@ -469,12 +468,6 @@ padding-right: 20px;
 
   }
 
-<<<<<<< HEAD
-  .background {
-    align-self: center;
-    width: 70%;
-  }
-=======
  .background{
    align-self: center;
    width: 100%;
@@ -495,7 +488,6 @@ padding-right: 20px;
  #about-section p{
    font-size: 1.5rem;
  }
->>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 
 }
 
@@ -687,13 +679,6 @@ form {
   font-size: 1rem;
 }
 
-<<<<<<< HEAD
-.contact-info-h3 {
-  padding-bottom: 20px;
-}
-
-.message-box h3 {
-=======
 
 .contact-info-h3{
   padding-bottom: 20px;
@@ -704,7 +689,6 @@ form {
 }
 
 .message-box h3{
->>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
   padding-bottom: 40px;
 }
 
@@ -714,13 +698,9 @@ form {
   font-size: 3rem;
 }
 
-<<<<<<< HEAD
 .send-message-h3 {
   text-align: center;
 }
-=======
-
->>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 
 .talk {
   margin-top: 30px;
@@ -757,8 +737,6 @@ form {
     margin-right: 40px;
   }
 
-<<<<<<< HEAD
-=======
   .contact-info-h3{
     padding-bottom: 20px;
     font-size: 1.5rem;
@@ -769,7 +747,6 @@ form {
     font-size: 1.5rem;
   }
  
->>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 }
 
 
@@ -780,10 +757,6 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-<<<<<<< HEAD
-  height: 10cm;
-  background-color: lightblue;
-=======
   height: 100%;
   background-color: burlywood;
   padding-bottom: 10px;
@@ -810,5 +783,4 @@ footer img{
   padding-left: 20px;
 }
 
->>>>>>> 8c3872cb25f4515dc5fb51fb21360a696f64b239
 }
