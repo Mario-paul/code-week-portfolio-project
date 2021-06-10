@@ -230,21 +230,8 @@ a {
   height: 100vh;
 }
 
-<<<<<<< HEAD
-/*#home>div {
-  /* width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; 
-}*/
-
-
 #home > div > h1 {
   font-size: 8vw;
-=======
-#home>div>h1 {
-  font-size: 50px;
->>>>>>> 9b67c1bece9f44f54d01587dae41577cc061ad01
   text-align: center;
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
@@ -348,20 +335,53 @@ a {
   border-radius: 30%;
 }
 
-#bio-button {
-  background-color: burlywood;
-  border: none;
-  line-height: 2rem;
-  font-size: 1rem;
-  min-width: 50%;
-  height: 50px;
+.button1 {
+  width: 19vw;
+  height: 6vw;
+  font-size: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.3em 0.3em 0;
+  border: 0.1em solid burlywood;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 2px;
   text-align: center;
-  border-radius: 5px;
+  box-sizing: border-box;
+  border-radius: 0.12em;
+  font-weight: 300;
+  color: burlywood;
+  text-align: center;
+  transition: all 0.2s;
+  text-decoration: none;
 }
 
+/*  */
+
+.button1:hover {
+  color: #000000;  
+  background-color: burlywood;
+}
 @media only screen and (min-width: 600px) {
-  #bio-section>img {
+  .button1 {
+    width: 12vw;
+    height: 4vw;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4em auto;
+  }
+
+  #bio-button {
+    font-size: 30vw;
+  }
+}
+
+/*  */
+
+@media only screen and (min-width: 600px) {
+  #bio-section > img {
     width: 20vw;
   }
 }
@@ -390,13 +410,18 @@ a {
 
 #work-section {
   width: 100%;
+  color: #202020;
   display: flex;
   flex-direction: column;
   height: auto;
-  background-color: #202020;
+  background-color: burlywood;;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#work-section-title {
+  margin-top: 5%;
 }
 
-#work-section>a {
+#work-section > a {
   height: 26vw;
 }
 
@@ -583,17 +608,22 @@ a {
   font-weight: none;
 }
 
-#about-section hr {
+ hr {
   background-color: rgba(255, 255, 255, 0.6);
-  width: 30%;
+  width: 40vw;
   height: 1px;
   border: none;
   margin-bottom: 30px;
   align-self: center;
 }
 
+#work-section > hr {
+  margin-bottom: 5%;
+  background-color: #202020;
+}
+
 .about-me-h1 {
-  font-size: 4vh;
+  font-size: 5vh;
   margin-top: 0;
   text-align: center;
   align-self: center;
@@ -640,7 +670,7 @@ line-height: 2rem;
     font-size: 2rem;
   }
 
-  #about-hobbies>h1 {
+  #about-hobbies > h1 {
     font-size: 2rem;
   }
 
@@ -703,7 +733,7 @@ line-height: 2rem;
 
 
 .my-skills {
-  font-size: 4vh;
+  font-size: 5vh;
   margin-top: 0;
   width: 50%;
   text-align: center;
@@ -726,6 +756,12 @@ line-height: 2rem;
     margin-right: 50px;
   }
 
+  .my-skills,
+  .about-me-h1,
+  #contact-me h1 {
+    font-size: 10vh;
+  }
+
   article {
     display: flex;
     justify-content: center;
@@ -737,7 +773,7 @@ line-height: 2rem;
   }
 
 
-  #skills-section>div>article>h1 {
+  #skills-section > div > article > h1 {
     font-size: 2rem;
   }
 
@@ -824,7 +860,7 @@ form {
   text-align: center;
 }
 
-.contact-info-box>div>h3 {
+.contact-info-box > div > h3 {
   font-size: 1rem;
 }
 
@@ -843,7 +879,7 @@ form {
 #contact-me h1 {
   margin-top: 0;
   margin-bottom: 40px;
-  font-size: 3rem;
+  font-size: 10vw;
 }
 
 .send-message-h3 {
@@ -865,11 +901,20 @@ form {
   text-align: center;
 }
 
+#bio-button {
+  font-size: 2.3vw;
+}
+
+
 @media only screen and (min-width: 600px) {
 
   #contact-me {
     height: 100%;
     width: 100vw;
+  }
+
+  #bio-button {
+    font-size: 1.5vw;
   }
 
   .desktop-contact-me {
@@ -888,6 +933,10 @@ form {
   .contact-info-h3 {
     padding-bottom: 20px;
     font-size: 1.5rem;
+  }
+
+  #contact-me h1 {
+    font-size: 5vw;
   }
 
   .send-message-h3 {
