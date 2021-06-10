@@ -629,9 +629,19 @@ form {
   
 }
 
+.contact-info-box>div>h3{
+  font-size: 1rem;
+}
+
+
 .contact-info-h3{
   padding-bottom: 20px;
 }
+
+.send-message-h3{
+  text-align: center;
+}
+
 .message-box h3{
   padding-bottom: 40px;
 }
@@ -642,9 +652,7 @@ form {
   font-size: 3rem;
 }
 
-.send-message-h3{
-  text-align: center;
-}
+
 
 .talk{
   margin-top: 30px;
@@ -679,6 +687,16 @@ form {
 
   .message-box{
     margin-right: 40px;
+  }
+
+  .contact-info-h3{
+    padding-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .send-message-h3{
+    text-align: center;
+    font-size: 1.5rem;
   }
  
 }
