@@ -235,13 +235,6 @@ a {
   /* padding: 49vh none; */  
 }
 
-#home>div {
-  /* width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; */
-}
-
 #home>div>h1 {
   font-size: 50px;
   text-align: center;

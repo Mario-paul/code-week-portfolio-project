@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,31 @@
     <title>Project 1</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body class="projects-body">
+
+    <!-- Script for injecting header -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <div w3-include-html="../includes/header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <!-- Nav bar transition script. Will load script file on /scripts folder -->
+    <script src="../scripts/navbar-transition.js"></script>
+
     <div class="projects-names">
         <h1>Apple Pie Project: Developer experience</h1>
     </div>
 
     <div id="project1-text">
-        <p>IBM&nbsp;Cloud error pages reflected out-of-date branding and were inconsistent in their illustration, content, and UI. With the inevitability of users encountering platform errors whether they are internal network based or human error, IBM&nbsp;Cloud needs to provide helpful ways to ameliorate the situation.</p>
-        <div class="project1-text-container"> 
+        <p>IBM&nbsp;Cloud error pages reflected out-of-date branding and were inconsistent in their illustration,
+            content, and UI. With the inevitability of users encountering platform errors whether they are internal
+            network based or human error, IBM&nbsp;Cloud needs to provide helpful ways to ameliorate the situation.</p>
+        <div class="project1-text-container">
             <div class="project1-divs" id="project1-problem">
                 <b class="project1-bold">Problem</b>
-                <p>Error pages did not reflect the current IBM&nbsp;Cloud branding scheme, and provided little help for users to resume their work.</p>
+                <p>Error pages did not reflect the current IBM&nbsp;Cloud branding scheme, and provided little help for
+                    users to resume their work.</p>
             </div>
             <div class="project1-divs" id="project1-role">
                 <b class="project1-bold">Role</b>
@@ -35,7 +50,8 @@
             </div>
             <div class="project1-divs" id="project1-solution">
                 <b class="project1-bold">Solution</b>
-                <p>To redesign 404 and 500 error pages to match the branding and visual standards of IBM&nbsp;Cloud today. Use research to improve UI.</p>
+                <p>To redesign 404 and 500 error pages to match the branding and visual standards of IBM&nbsp;Cloud
+                    today. Use research to improve UI.</p>
             </div>
         </div>
         <img src="../images/project1.jpg" alt="project1 image">
@@ -59,4 +75,5 @@ Alejandra Chavarria (Research)
 Nick Tilden (UX)
 Frank Rodriguez (Visual) -->
 </body>
+
 </html>
