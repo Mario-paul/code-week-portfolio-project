@@ -379,32 +379,46 @@ a {
 
 
 .projects-names {
-  margin: 10%;
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bolder;
+  width: 100%;
 }
 
 .projects-names > h1 {
-  font-size: 10vw;
+  font-size: 7vw;
+}
+
+.projects-background-image {
+  background-image: url("../images/project1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
 }
 
 /* Text inside project 1's page */
 
 #project1-text {
-  margin: 10%;
+  margin: 5%;
   font-family: 'Josefin Sans', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .project1-text-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: flex-start;
+}
+
+.project1-text-container {
+  font-size: 3.5vw;
 }
 
 #project1-text > img {
@@ -421,16 +435,18 @@ a {
   color: white;
 }
 
+.project1-divs > p {
+  text-align: center;
+}
+
 .project1-divs {
-  margin-top: 7%;
-  margin: 5vw;
   display: flex;
-  justify-content: center;
+  /* justify-content: flex-start; */
   flex-direction: column;
 }
 
-.project1-divs > p {
-  font-size: 3.5vw;
+#project1-paragraph-description {
+  width: 40%;
 }
 
 #project1-solution {
@@ -443,6 +459,10 @@ a {
   color: #202020;
 }
 
+#project1-problem {
+  width: 30%;
+}
+
 
 /* CSS FOR PROJECT 2 HTML */
 
@@ -452,12 +472,18 @@ a {
 @media only screen and (min-width: 600px) {
 
   .projects-names > h1 {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   #project1-text > p,
-  .project1-divs > p {
-    font-size: 2vw;
+  .project1-divs > p,
+  .project1-text-container > p {
+    font-size: 1.5vw;
+  }
+
+  .project1-divs > b {
+    font-size: 2.5vw; 
+    font-weight: bolder;
   }
 
   #project1-text > img {
@@ -591,7 +617,7 @@ padding-right: 20px;
   transform: scale(1.5);
 }
 
-#skills-section>div {
+#skills-section > div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -637,7 +663,6 @@ padding-right: 20px;
     width: fit-content;
     margin-left: 50px;
     margin-right: 50px;
-
 
   }
 
