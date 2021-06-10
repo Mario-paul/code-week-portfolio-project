@@ -5,9 +5,10 @@
 html {
   min-width: fit-content;
   max-width: 100vw;
-  overflow-x:hidden;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 
 .main-body {
   background-image: url("/images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg");
@@ -19,38 +20,43 @@ body {
   margin: 0;
   color: white;
   background-size: 100vw;
+
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-  
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   main-body {
     /* background-color: lightblue; */
     background-image: url("/images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg");
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 150vw;
     background-position-y: top;
-    background-position-x: center;    
+    background-position-x: center; */
   }
 }
 
+/* HEADER SECTION */
 
 a {
   color: rgb(255, 255, 255);
+  font-weight: bold;
 }
 
-/* header */
 .header-spacing {
   padding: 34px;
   display: flex;
@@ -99,9 +105,7 @@ a {
   text-decoration: none;
 }
 
-
 /* menu */
-
 #header .menu {
   font-family: 'Roboto Mono', monospace;
   clear: both;
@@ -110,7 +114,6 @@ a {
 }
 
 /* menu icon */
-
 #header .menu-icon {
   cursor: pointer;
   display: inline-block;
@@ -149,7 +152,6 @@ a {
 }
 
 /* menu btn */
-
 #header .menu-btn {
   display: none;
 }
@@ -176,7 +178,6 @@ a {
 }
 
 /* 48em = 768px */
-
 @media (min-width: 48em) {
   #header li {
     float: left;
@@ -197,6 +198,64 @@ a {
   }
 }
 
+/* HOME SECTION */
+
+#home {
+  background: url(../images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* box-sizing: border-box;   */
+  background-position: top;
+
+  /* height: 100vw; */
+  min-height: 100vh;
+  /* max-width: 100vw; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+}
+
+#home>div {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Mono', monospace;
+  /* font-size: 80%; */
+  /* align-items: center;
+  flex-direction: column; */
+  color: white;
+  height: 30%;
+  /* background-color: #202020; */
+  padding: 49vh 200px;
+}
+
+#home>div {
+  /* width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; */
+}
+
+#home>div>h1 {
+  font-size: 50px;
+  text-align: center;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 2.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
 /* BIO SECTION */
 
 #bio-section {
@@ -208,14 +267,8 @@ a {
   flex-direction: column;
   color: white;
   height: 30%;
-  /* background-color: #202020; */
+  background-color: #202020;
   padding: 15% 6%;
-}
-
-#bio-section > img {
-  max-width: 50%;
-  padding: 10%;
-  border-radius: 50%;
 }
 
 #bio-section > p {
@@ -231,6 +284,7 @@ a {
   padding-left: 10%;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 #bio-section > div > h1 {
   font-size: 5vw;
@@ -257,6 +311,7 @@ a {
   flex-direction: row;
   justify-content: space-around;
 }
+
 
 /* The typing effect */
 @keyframes typing {
@@ -306,7 +361,6 @@ a {
   }
 }
 
-
 /* WORK SECTION */
 
 #work-id {
@@ -337,10 +391,9 @@ a {
   background-color: #202020;
 }
 
-#work-section > a {
+#work-section>a {
   height: 26vw;
 }
-
 
 /* Images of work section */
 
@@ -429,6 +482,7 @@ a {
   flex-direction: column;
 }
 
+
 .project1-divs > p {
   font-size: 3.5vw;
 }
@@ -444,10 +498,14 @@ a {
 }
 
 
+
 /* CSS FOR PROJECT 2 HTML */
+
+/* insert code here - delete me */
 
 /* CSS FOR PROJECT 3 HTML */
 
+/* insert code here - delete me */
 
 @media only screen and (min-width: 600px) {
 
@@ -467,10 +525,7 @@ a {
   }
 }
 
-
 /* ABOUT SECTION */
-
-/***** About Section****/
 
 #about-section {
   display: flex;
@@ -483,13 +538,11 @@ a {
   height: 100%;
   padding-top: 60px;
   padding-bottom: 40px;
-
 }
 
-#about-section p{
+#about-section p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: none;
-
 }
 
 #about-section hr {
@@ -509,18 +562,19 @@ a {
 
 }
 
+
 .background > article > p{
 padding-left: 30px;
 padding-right: 30px;
 line-height: 2rem;
+
 }
 
-#about-location img{
+#about-location img {
   width: 50px;
-  
 }
 
-#about-hobbies img{
+#about-hobbies img {
   width: 50px;
 }
 
@@ -533,34 +587,34 @@ line-height: 2rem;
   .location-hobbies {
     display: flex;
     justify-content: space-evenly;
-
   }
 
- .background{
-   align-self: center;
-   width: 100%;
+  .background {
+    align-self: center;
+    width: 100%;
+  }
 
- }
- .background-h1{
-   font-size: 2rem;
- }
+  .background-h1 {
+    font-size: 2rem;
+  }
 
- #about-location>h1{
-  font-size: 2rem;
- }
+  #about-location>h1 {
+    font-size: 2rem;
+  }
 
- #about-hobbies>h1{
-  font-size: 2rem;
- }
+  #about-hobbies>h1 {
+    font-size: 2rem;
+  }
 
- #about-section p{
-   font-size: 1.5rem;
- }
+  #about-section p {
+    font-size: 1.5rem;
+  }
 
 }
 
 
-/***** Skills Section****/
+/* SKILLS SECTION */
+
 
 #skills-section {
   display: flex;
@@ -598,18 +652,21 @@ line-height: 2rem;
   align-items: center;
   align-self: center;
   width: 300px;
-  
 }
+
 
 #skills-section > div h1{
   color: black;
   
+
 }
 
 #skills-section > div > article > p {
   text-align: center;
   color: black;
+
   line-height: 2rem;
+
 
 }
 
@@ -637,8 +694,6 @@ line-height: 2rem;
     width: fit-content;
     margin-left: 50px;
     margin-right: 50px;
-
-
   }
 
   article {
@@ -651,19 +706,18 @@ line-height: 2rem;
     margin-right: 3%;
   }
 
-  #skills-section > div > article > h1{
+
+  #skills-section>div>article>h1 {
     font-size: 2rem;
   }
 
+  #skills-section p {
+    font-size: 1.5rem;
+  }
 
-#skills-section p {
-  font-size: 1.5rem;
 }
-}
 
-
-
-/***** Contact Me Section *****/
+/* CONTACT-ME SECTION */
 
 #contact-me {
   display: flex;
@@ -671,12 +725,10 @@ line-height: 2rem;
   justify-content: space-around;
   align-items: center;
   font-family: 'Josefin Sans', sans-serif;
-  height: 100%;
-  /* margin-top: 30px; */
+  height: 100%; 
   padding-top: 50px;
   background-color: #202020;
 }
-
 
 .message-box {
   display: flex;
@@ -702,7 +754,6 @@ form {
   line-height: 2rem;
   font-size: 1rem;
   width: 90%;
-
 }
 
 #contact-me input[type=submit] {
@@ -741,13 +792,11 @@ form {
   padding-top: 20px;
   padding-bottom: 100px;
   text-align: center;
-  
 }
 
-.contact-info-box > div > h3 {
+.contact-info-box>div>h3 {
   font-size: 1rem;
 }
-
 
 .contact-info-h3 {
   padding-bottom: 20px;
@@ -806,21 +855,20 @@ form {
     margin-right: 40px;
   }
 
-  .contact-info-h3{
+  .contact-info-h3 {
     padding-bottom: 20px;
     font-size: 1.5rem;
   }
-  
-  .send-message-h3{
+
+  .send-message-h3 {
     text-align: center;
     font-size: 1.5rem;
   }
- 
 }
-
 
 /***** Contact Me Section END*****/
 
+/* FOOTER SECTION */
 
 footer {
   display: flex;
@@ -832,10 +880,11 @@ footer {
   padding-top: 10px;
 }
 
-footer img{
+footer img {
   width: 50px;
   height: 50px;
 }
+
 
 @media only screen and (min-width: 600px){
   footer{
