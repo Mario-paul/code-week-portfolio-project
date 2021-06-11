@@ -495,7 +495,7 @@ hr {
 #project1:hover,
 #project2:hover,
 #project3:hover{
-  text-shadow: 2px 2px 4px burlywood;
+  text-shadow: 1px 1px 2px black, 0 0 25px burlywood, 0 0 5px orange;
   transform: scale(1.2);
 }
 
