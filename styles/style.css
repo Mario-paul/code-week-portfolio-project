@@ -33,7 +33,8 @@ body {
 
 a {
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .header-spacing {
@@ -230,6 +231,30 @@ a {
     blink-caret .75s step-end infinite;
 }
 
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 55%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
 /* BIO SECTION */
 
 #bio-section {
@@ -254,8 +279,6 @@ a {
   align-self: center;
   font-size: 1rem;
 }
-
-
 
 #bio-section > div > h1 {
   font-size: 5vw;
@@ -283,40 +306,14 @@ a {
   padding-bottom: 40px;
 }
 
-
-
 #bio-section img{
-  height: 100%;
-  width: 50%;
+  height: 80%;
+  width: 45%;
   align-self: center;
   border-radius: 50%;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 55%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: orange;
-  }
-}
-
-#bio-section  form {
+#bio-section form {
   width: 20%;
   padding-top: 10%;
   border-radius: 30%;
@@ -344,8 +341,6 @@ a {
   text-decoration: none;
 }
 
-/*  */
-
 .button1:hover {
   color: #000000;  
   background-color: burlywood;
@@ -368,11 +363,6 @@ a {
     flex-direction: row;
   }
   
-}
-
-/*  Bio-section-End*/
-
-@media only screen and (min-width: 600px) {
   #bio-section > img {
     width: 20vw;
   }
@@ -380,7 +370,6 @@ a {
   #bio-section p{
     font-size: 2.5vw;
   }
-
 }
 
 /* WORK SECTION */
