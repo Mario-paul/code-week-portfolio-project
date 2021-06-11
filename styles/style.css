@@ -437,6 +437,38 @@ hr {
   margin-bottom: 5%;
   background-color: #202020;
 }
+
+#project1,
+#project2,
+#project3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* color: transparent; */
+  
+}
+
+#project2 {
+  color: white;
+}
+
+.projects-name {
+  color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(60%);
+  position: relative;
+  filter: contrast(1.75);
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
 /* Images of work section */
 
 #project1 {
@@ -444,6 +476,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 100vw;
   transition: all 1s;
+  
 }
 
 #project2 {
@@ -463,6 +496,7 @@ hr {
 #project1:hover,
 #project2:hover,
 #project3:hover{
+  text-shadow: 2px 2px 4px burlywood;
   transform: scale(1.2);
 }
 
@@ -480,6 +514,7 @@ hr {
 }
 
 .projects-names > h1 {
+  text-shadow: 2px 2px 4px burlywood;
   font-size: 7vw;
 }
 
