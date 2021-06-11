@@ -13,7 +13,6 @@ body {
   margin: 0;
   color: white;
   background-size: 100vw;
-
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -35,6 +34,7 @@ a {
   color: rgb(255, 255, 255);
   font-weight: bolder;
   font-size: 1.2rem;
+  text-shadow: 3px 3px 4px black;
 }
 
 .header-spacing {
@@ -52,6 +52,13 @@ a {
   z-index: 3;
   transition: top 0.3s;
   display: block;
+  
+}
+
+@media  (max-width: 600px) {
+  #header li a {
+    background-color: rgba(0, 0, 0, 0.507);
+  }
 }
 
 #header ul {
@@ -59,7 +66,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 #header li a {
@@ -69,6 +76,7 @@ a {
   text-decoration: none;
   display: flex;
   justify-content: flex-end;
+  /* background-color: rgba(0, 0, 0, 0.24); */
 }
 
 #header li a:hover,
@@ -188,12 +196,11 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  box-sizing: border-box;  
+  box-sizing: border-box;
   background-position: top center;
   background-repeat: no-repeat;
-
-  /* height: 100vw; */
   min-height: 100vh;
+  /* height: 100vw; */
   /* max-width: 100vw; */
   /* display: flex;
   align-items: center;
@@ -206,7 +213,7 @@ a {
   }
 }
 
-#home > div {
+#home>div {
   display: flex;
   justify-content: center;
   font-family: 'Roboto Mono', monospace;
@@ -215,7 +222,7 @@ a {
   height: 100vh;
 }
 
-#home > div > h1 {
+#home>div>h1 {
   font-size: 8vw;
   text-align: center;
   overflow: hidden;
@@ -282,7 +289,7 @@ a {
   font-size: 1rem;
 }
 
-#bio-section > div > h1 {
+#bio-section>div>h1 {
   font-size: 5vw;
   text-align: center;
   overflow: hidden;
@@ -308,7 +315,7 @@ a {
   padding-bottom: 40px;
 }
 
-#bio-section img{
+#bio-section img {
   height: 80%;
   width: 45%;
   align-self: center;
@@ -344,9 +351,10 @@ a {
 }
 
 .button1:hover {
-  color: #000000;  
+  color: #000000;
   background-color: burlywood;
 }
+
 @media only screen and (min-width: 600px) {
   .button1 {
     width: 12vw;
@@ -361,15 +369,15 @@ a {
     font-size: 30vw;
   }
 
-  #bio-section{
+  #bio-section {
     flex-direction: row;
   }
-  
-  #bio-section > img {
+
+  #bio-section>img {
     width: 20vw;
   }
 
-  #bio-section p{
+  #bio-section p {
     font-size: 2.5vw;
   }
 }
@@ -402,14 +410,15 @@ a {
   display: flex;
   flex-direction: column;
   height: auto;
-  background-color: burlywood;;
+  background-color: burlywood;
   font-family: 'Josefin Sans', sans-serif;
 }
+
 #work-section-title {
   margin-top: 5%;
 }
 
-#work-section > a {
+#work-section>a {
   height: 26vw;
 }
 
@@ -423,7 +432,7 @@ hr {
   align-self: center;
 }
 
-#work-section > hr {
+#work-section>hr {
   margin-bottom: 5%;
   background-color: #202020;
 }
@@ -436,7 +445,7 @@ hr {
   align-items: center;
   text-decoration: none;
   /* color: transparent; */
-  
+
 }
 
 #project2 {
@@ -466,7 +475,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 100vw;
   transition: all 1s;
-  
+
 }
 
 #project2 {
@@ -485,7 +494,7 @@ hr {
 
 #project1:hover,
 #project2:hover,
-#project3:hover{
+#project3:hover {
   text-shadow: 1px 1px 2px black, 0 0 25px burlywood, 0 0 5px orange;
   transform: scale(1.2);
 }
@@ -503,7 +512,7 @@ hr {
   width: 100%;
 }
 
-.projects-names > h1 {
+.projects-names>h1 {
   text-shadow: 2px 2px 4px burlywood;
   font-size: 7vw;
 }
@@ -548,7 +557,7 @@ hr {
   font-size: 3.5vw;
 }
 
-#project1-text > img {
+#project1-text>img {
   width: 90vw;
   height: 30vw;
   padding-bottom: 70%;
@@ -562,7 +571,7 @@ hr {
   color: white;
 }
 
-.project1-divs > p {
+.project1-divs>p {
   text-align: center;
 }
 
@@ -573,7 +582,7 @@ hr {
 }
 
 
-.project1-divs > p {
+.project1-divs>p {
   font-size: 3.5vw;
 }
 
@@ -583,7 +592,7 @@ hr {
   background-color: burlywood;
 }
 
-#project1-solution > b {
+#project1-solution>b {
   color: #202020;
 }
 
@@ -616,22 +625,22 @@ hr {
 /* @media */
 @media only screen and (min-width: 600px) {
 
-  .projects-names > h1 {
+  .projects-names>h1 {
     font-size: 4vw;
   }
 
-  #project1-text > p,
-  .project1-divs > p,
-  .project1-text-container > p {
+  #project1-text>p,
+  .project1-divs>p,
+  .project1-text-container>p {
     font-size: 1.5vw;
   }
 
-  .project1-divs > b {
-    font-size: 2.5vw; 
+  .project1-divs>b {
+    font-size: 2.5vw;
     font-weight: bolder;
   }
 
-  #project1-text > img {
+  #project1-text>img {
     width: 70vw;
     height: 20vw;
     padding-bottom: 2%;
@@ -659,7 +668,7 @@ hr {
 }
 
 
-#work-section > hr {
+#work-section>hr {
   margin-bottom: 5%;
   background-color: #202020;
 }
@@ -673,10 +682,10 @@ hr {
 }
 
 
-.background > article > p{
-padding-left: 30px;
-padding-right: 30px;
-line-height: 2rem;
+.background>article>p {
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 2rem;
 
 }
 
@@ -707,7 +716,7 @@ line-height: 2rem;
     width: 100%;
   }
 
-  .background p{
+  .background p {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -720,7 +729,7 @@ line-height: 2rem;
     font-size: 2rem;
   }
 
-  #about-hobbies > h1 {
+  #about-hobbies>h1 {
     font-size: 2rem;
   }
 
@@ -776,7 +785,7 @@ line-height: 2rem;
   transition: 2s;
 }
 
-#skills-section > div {
+#skills-section>div {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -785,7 +794,7 @@ line-height: 2rem;
   width: 300px;
 }
 
-#skills-section > div > article > p {
+#skills-section>div>article>p {
   text-align: center;
   line-height: 2rem;
 }
@@ -804,7 +813,7 @@ line-height: 2rem;
     width: 100vw;
   }
 
-  #skills-section > div {
+  #skills-section>div {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
@@ -822,7 +831,7 @@ line-height: 2rem;
 
 
 
-  #skills-section > div > article > h1 {
+  #skills-section>div>article>h1 {
     font-size: 2rem;
   }
 
@@ -840,7 +849,7 @@ line-height: 2rem;
   justify-content: space-around;
   align-items: center;
   font-family: 'Josefin Sans', sans-serif;
-  height: 100%; 
+  height: 100%;
   padding-top: 50px;
   background-color: #202020;
 }
@@ -909,7 +918,7 @@ form {
   text-align: center;
 }
 
-.contact-info-box > div > h3 {
+.contact-info-box>div>h3 {
   font-size: 1rem;
 }
 
@@ -1013,8 +1022,8 @@ footer img {
   height: 50px;
 }
 
-@media only screen and (min-width: 600px){
-  footer{
+@media only screen and (min-width: 600px) {
+  footer {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -1022,7 +1031,7 @@ footer img {
     width: 100vw;
   }
 
-  footer img{
+  footer img {
     padding-right: 60px;
     padding-left: 60px;
   }
@@ -1036,6 +1045,6 @@ footer img {
 
 /* CSS for Resume.html page */
 
-#resume-body{
+#resume-body {
   background-color: #202020;
 }
