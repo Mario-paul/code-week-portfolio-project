@@ -33,7 +33,8 @@ body {
 
 a {
   color: rgb(255, 255, 255);
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .header-spacing {
@@ -66,6 +67,8 @@ a {
   padding: 20px 20px;
   border-right: 1px solid #f4f4f400;
   text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #header li a:hover,
@@ -180,13 +183,14 @@ a {
 /* HOME SECTION */
 
 #home {
-  background: url(../images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg) no-repeat center center fixed;
+  background-image: url(../images/brooke-cagle-WHWYBmtn3_0-unsplash.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   box-sizing: border-box;  
-  background-position: top;
+  background-position: top center;
+  background-repeat: no-repeat;
 
   /* height: 100vw; */
   min-height: 100vh;
@@ -194,7 +198,12 @@ a {
   /* display: flex;
   align-items: center;
   justify-content: center; */
+}
 
+@media only screen and (min-width: 600px) {
+  #home {
+    background-attachment: fixed;
+  }
 }
 
 #home > div {
@@ -224,6 +233,30 @@ a {
     blink-caret .75s step-end infinite;
 }
 
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 55%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange;
+  }
+}
+
 /* BIO SECTION */
 
 #bio-section {
@@ -248,8 +281,6 @@ a {
   align-self: center;
   font-size: 1rem;
 }
-
-
 
 #bio-section > div > h1 {
   font-size: 5vw;
@@ -277,40 +308,14 @@ a {
   padding-bottom: 40px;
 }
 
-
-
 #bio-section img{
-  height: 100%;
-  width: 50%;
+  height: 80%;
+  width: 45%;
   align-self: center;
   border-radius: 50%;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 55%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: orange;
-  }
-}
-
-#bio-section  form {
+#bio-section form {
   width: 20%;
   padding-top: 10%;
   border-radius: 30%;
@@ -338,8 +343,6 @@ a {
   text-decoration: none;
 }
 
-/*  */
-
 .button1:hover {
   color: #000000;  
   background-color: burlywood;
@@ -360,11 +363,6 @@ a {
     flex-direction: row;
   }
   
-}
-
-/*  Bio-section-End*/
-
-@media only screen and (min-width: 600px) {
   #bio-section > img {
     width: 20vw;
   }
@@ -372,7 +370,6 @@ a {
   #bio-section p{
     font-size: 2.5vw;
   }
-
 }
 
 /* WORK SECTION */
@@ -428,6 +425,38 @@ hr {
   margin-bottom: 5%;
   background-color: #202020;
 }
+
+#project1,
+#project2,
+#project3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  /* color: transparent; */
+  
+}
+
+#project2 {
+  color: white;
+}
+
+.projects-name {
+  color: burlywood;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(60%);
+  position: relative;
+  filter: contrast(1.75);
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
 /* Images of work section */
 
 #project1 {
@@ -435,6 +464,7 @@ hr {
   background-repeat: no-repeat;
   background-size: 100vw;
   transition: all 1s;
+  
 }
 
 #project2 {
@@ -454,6 +484,7 @@ hr {
 #project1:hover,
 #project2:hover,
 #project3:hover{
+  text-shadow: 1px 1px 2px black, 0 0 25px burlywood, 0 0 5px orange;
   transform: scale(1.2);
 }
 
@@ -471,6 +502,7 @@ hr {
 }
 
 .projects-names > h1 {
+  text-shadow: 2px 2px 4px burlywood;
   font-size: 7vw;
 }
 
@@ -508,6 +540,7 @@ hr {
 #project1-time {
   margin: 5%;
 }
+
 
 .project1-text-container {
   font-size: 3.5vw;
@@ -560,12 +593,25 @@ hr {
 
 /* CSS FOR PROJECT 2 HTML */
 
-/* insert code here - delete me */
+.projects-background-image-2 {
+  background-image: url("../images/project2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
+}
 
 /* CSS FOR PROJECT 3 HTML */
 
-/* insert code here - delete me */
+.projects-background-image-3 {
+  background-image: url("../images/project3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: fixed;
+  height: 30vw;
+}
 
+/* @media */
 @media only screen and (min-width: 600px) {
 
   .projects-names > h1 {
