@@ -318,8 +318,8 @@ a {
 }
 
 .button1 {
-  width: 15vw;
-  height: 7vw;
+  width: 30vw;
+  height: 9vw;
   font-size: 100px;
   display: flex;
   justify-content: center;
@@ -354,9 +354,7 @@ a {
     align-self: center;
   }
 
-  #bio-button {
-    font-size: 30vw;
-  }
+
 
   #bio-section{
     flex-direction: row;
@@ -640,7 +638,7 @@ line-height: 2rem;
 
 .location-hobbies img:hover {
   transform: scale(1.5);
-  transition: 2s;
+  transition: 0.5;
 }
 
 @media only screen and (min-width: 600px) {
@@ -727,7 +725,7 @@ line-height: 2rem;
 
 #skills-section img:hover {
   transform: scale(1.5);
-  transition: 2s;
+  transition: 0.5s;
 }
 
 #skills-section > div {
@@ -825,22 +823,6 @@ form {
   width: 90%;
 }
 
-#contact-me input[type=submit] {
-  background-color: burlywood;
-  border: none;
-  line-height: 2rem;
-  font-size: 1rem;
-  min-width: 50%;
-  height: 50px;
-  letter-spacing: 2px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-#contact-me input[type=submit]:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  transition: 1s;
-}
 
 #contact-me hr {
   width: 30%;
@@ -905,7 +887,7 @@ form {
 }
 
 #bio-button {
-  font-size: 2.3vw;
+  font-size: 4vw;
 }
 
 
@@ -967,7 +949,14 @@ footer img {
   height: 50px;
 }
 
+footer img:hover{
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
+
 @media only screen and (min-width: 600px){
+
   footer{
     display: flex;
     justify-content: center;
@@ -986,6 +975,7 @@ footer img {
   background-color: #202020;
   width: 1%;
   height: 0;
+
 }
 
 /* CSS for Resume.html page */
